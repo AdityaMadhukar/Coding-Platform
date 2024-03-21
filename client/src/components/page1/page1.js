@@ -72,6 +72,7 @@ const Page1 = () => {
             <CodeEditor
               value={formData.code}
               // data-color-mode="dark"
+              name="code"
               language={formData.language}
               onChange={handleInputChange}
               className="block p-2.5 w-full h-[70vh] bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500"

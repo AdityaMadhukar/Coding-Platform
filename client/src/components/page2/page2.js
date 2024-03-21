@@ -57,7 +57,7 @@ const Page2 = () => {
                                     {submission.time}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {submission.code.substring(0,100)}
+                                    {submission.code.slice(0, 100)}
                                 </td>
                             </tr>
                             </>
