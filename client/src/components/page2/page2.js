@@ -33,10 +33,13 @@ const Page2 = () => {
                                 Stdin
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Time
+                                Source Code
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Source Code
+                                Output
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Time
                             </th>
                         </tr>
                     </thead>
@@ -54,10 +57,13 @@ const Page2 = () => {
                                     {submission.stdin}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {submission.time}
+                                    {submission.code.slice(0, 100)}
                                 </td>
                                 <td class="px-6 py-4">
-                                    {submission.code.slice(0, 100)}
+                                    {submission.output}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {submission.time}
                                 </td>
                             </tr>
                             </>
