@@ -6,8 +6,9 @@ const Page2 = () => {
         const fetchData = async() => {
             await axios.get('https://coding-platform-inrc.onrender.com/api/submissions')
                 .then((res)=>{
-                    console.log(res);
-                    setSubmissions(res.data);
+                    const data = res.data;
+                    data.reverse();
+                    setSubmissions(data);
                 })
                 .catch((err)=>{
                     console.log(err);
