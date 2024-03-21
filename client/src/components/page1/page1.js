@@ -17,7 +17,7 @@ const Page1 = () => {
   };
   const handleSubmit = async () => {
     console.log(formData);
-    await axios.post('http://localhost:8080/api/submit', formData)
+    await axios.post('https://coding-platform-inrc.onrender.com/api/submit', formData)
       .then((res) => {
         console.log(res);
         alert("Submitted");

@@ -4,7 +4,7 @@ const Page2 = () => {
     const [submissions, setSubmissions] = useState();
     useEffect(() => {
         const fetchData = async() => {
-            await axios.get('http://localhost:8080/api/submissions')
+            await axios.get('https://coding-platform-inrc.onrender.com/api/submissions')
                 .then((res)=>{
                     console.log(res);
                     setSubmissions(res.data);
