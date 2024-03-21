@@ -34,6 +34,9 @@ const Page2 = () => {
                             <th scope="col" class="px-6 py-3">
                                 Time
                             </th>
+                            <th scope="col" class="px-6 py-3">
+                                Source Code
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -52,8 +55,10 @@ const Page2 = () => {
                                 <td class="px-6 py-4">
                                     {submission.time}
                                 </td>
+                                <td class="px-6 py-4">
+                                    {submission.code.substring(0,100)}
+                                </td>
                             </tr>
-                            {/* {submission.code.substr(0,100)} */}
                             </>
                         ))}
                     </tbody>
