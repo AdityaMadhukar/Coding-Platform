@@ -30,7 +30,7 @@ const submit = async (req, res) => {
           language: languageID,
           version: 'latest',
           code,
-          input: null
+          input: stdin
         }
       };
       var output='';
